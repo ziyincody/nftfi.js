@@ -1,5 +1,5 @@
 {
-  "name": "@nftfi/js",
+  "name": "nftfi",
   "version": "0.3.12",
   "main": "./src/nftfi.js",
   "exports": {
@@ -22,5 +22,8 @@
     "lodash.set": "^4.3.2",
     "socket.io-client": "^4.5.4",
     "web3": "^1.7.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

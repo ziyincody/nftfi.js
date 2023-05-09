@@ -57,6 +57,8 @@ export default {
       set(options, 'config.api.key', options?.api?.key);
     }
 
+    console.log("inittttttttt")
+
     const hasApiKey = options?.config?.api?.key;
     const hasGnosisSafePks = options?.ethereum?.account?.multisig?.gnosis?.safe?.owners?.privateKeys;
     const hasGnosisSafeAddress = options?.ethereum?.account?.multisig?.gnosis?.safe?.address;
@@ -70,9 +72,10 @@ export default {
     if (!hasWeb3Provider && !hasProviderUrl) {
       throw 'Please provide a value for the ethereum.provider.url field in the options parameter.';
     }
-    if (!hasWeb3Provider && !hasGnosisSafePks && !hasAccountPk) {
-      throw 'Please provide a value for the ethereum.account.privateKey field in the options parameter.';
-    }
+    console.log("HERE")
+    // if (!hasWeb3Provider && !hasGnosisSafePks && !hasAccountPk) {
+    //   throw 'Please provide a value for the ethereum.account.privateKey field in the options parameter.';
+    // }
     if (!hasApiKey) {
       throw 'Please provide a value for the api.key field in the options parameter.';
     }
